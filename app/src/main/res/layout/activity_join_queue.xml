@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/joinQueueLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_page"
+    tools:context=".JoinQueueActivity">
+
+    <!-- Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/join_queue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Search Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@color/card_bg"
+        android:elevation="2dp"
+        android:layout_margin="12dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="@string/search_establishments_or_queues"
+            android:background="@drawable/shadowkinemerut"
+            android:paddingHorizontal="12dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/search"
+            android:src="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <!-- Section Title -->
+    <TextView
+        android:id="@+id/tvAvailableQueues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/available_queues"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#222222" />
+
+    <!-- RecyclerView List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCounters"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:layout_margin="12dp"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:backgroundTint="@color/primary_700"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:elevation="2dp" />
+</LinearLayout>

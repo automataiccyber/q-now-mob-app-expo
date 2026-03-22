@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@color/card_bg"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvSender"
+            android:text="Sender Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:text="Filename.pdf"
+            android:textSize="14sp"
+            android:textColor="@color/primary_700"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:text="Message content here..."
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTimestamp"
+            android:text="Jan 01, 2025"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

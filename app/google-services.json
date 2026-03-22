@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "72096271594",
+    "firebase_url": "https://q-now-7d98a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "q-now-7d98a",
+    "storage_bucket": "q-now-7d98a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72096271594:android:539ead17c3c4fe3ac49b93",
+        "android_client_info": {
+          "package_name": "com.example.signin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlklMBPs6SQSzn04sNPTub65D5chyIjYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

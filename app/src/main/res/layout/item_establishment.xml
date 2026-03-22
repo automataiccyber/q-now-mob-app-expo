@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/card_bg">
+
+    <TextView
+        android:id="@+id/tvEstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Establishment Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/tvEstHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours: Mon-Fri 08:00-17:00"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <TextView
+        android:id="@+id/tvEstContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact: 0917-xxxxxxx"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <TextView
+        android:id="@+id/tvEstEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: example@email.com"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <TextView
+        android:id="@+id/tvEstPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Person: Juan Dela Cruz"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <TextView
+        android:id="@+id/tvEstDepartments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departments: Pediatrics, General"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <TextView
+        android:id="@+id/tvEstServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services: Consultation, X-ray"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+</LinearLayout>

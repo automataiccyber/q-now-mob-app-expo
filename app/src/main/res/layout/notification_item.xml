@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@color/card_bg"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top row: type pill + timestamp -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Type pill: arrival / appointment / other -->
+            <TextView
+                android:id="@+id/notifTypePill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/accent_info"
+                android:text="TYPE"/>
+
+            <TextView
+                android:id="@+id/notifTimestamp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="2025-01-01 14:33"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Notification Title -->
+        <TextView
+            android:id="@+id/notifTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification Title"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Subtitle (Establishment and Counter) -->
+        <TextView
+            android:id="@+id/notifSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Establishment - Counter"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Main Message -->
+        <TextView
+            android:id="@+id/notifMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification message text goes here."
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Queue Status / Chain Indicator -->
+        <TextView
+            android:id="@+id/notifStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Queue Status: Awaiting Arrival"
+            android:textSize="13sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_information"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:inputType="text"
+            android:background="@drawable/shadowkinemerut"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#8D6E63"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:background="@drawable/shadowkinemerut"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#8D6E63"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:background="@drawable/shadowkinemerut"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#8D6E63"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Contact -->
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_number"
+            android:inputType="phone"
+            android:background="@drawable/shadowkinemerut"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#8D6E63"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shadowkinemerut"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#8D6E63"
+            android:layout_marginBottom="12dp" />
+
+        <!-- PIN with Toggle -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Security PIN (4 digits)"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:background="@drawable/shadowkinemerut"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:paddingEnd="48dp"
+                android:textColorHint="#8D6E63" />
+
+            <ImageButton
+                android:id="@+id/btnTogglePin"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_visibility_off"
+                android:contentDescription="Toggle PIN visibility"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:tint="#8D6E63" />
+        </FrameLayout>
+
+        <!-- Priority Checkboxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/cbPWD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pwd" />
+
+            <CheckBox
+                android:id="@+id/cbElderly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/elderly" />
+
+            <CheckBox
+                android:id="@+id/cbSevere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/severe_health_condition" />
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_information"
+            android:backgroundTint="@color/primary_700"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Disclaimer -->
+        <TextView
+            android:id="@+id/alreadyhaveaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/by_tapping_save_information_you_are_consenting_to_the_use_of_this_information_for_the_application_s_functionality"
+            android:textColor="#5C6BC0"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:layout_marginBottom="12dp" />
+    </LinearLayout>
+</ScrollView>

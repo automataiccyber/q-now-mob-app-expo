@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Confirm Queue"
+            app:titleTextColor="#F0F0F0"
+            android:backgroundTint="@color/primary_700"
+            android:elevation="4dp" />
+
+        <!-- Queue Name -->
+        <TextView
+            android:id="@+id/tvQueueName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Queue Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp"
+            android:textColor="#222222" />
+
+        <!-- Input Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Reason:"
+                android:textSize="15sp"
+                android:textColor="#222222"
+                android:paddingBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reason for visit"
+                android:inputType="textCapSentences"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp"
+                android:textColor="#111111"
+                android:textColorHint="#888888" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnJoinQueue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join Queue"
+            android:backgroundTint="@color/primary_700"
+            android:textColor="#F0F0F0"
+            android:elevation="2dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:backgroundTint="#B0BEC5"
+            android:textColor="#222222"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+</ScrollView>
