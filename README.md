@@ -115,6 +115,14 @@ The app requires the following permissions:
 - `INTERNET`: For Firebase communication.
 - `POST_NOTIFICATIONS`: For receiving queue and appointment updates (Android 13+).
 
+## 📱 Screenshots
+
+<img width="900" height="2030" alt="image" src="https://github.com/user-attachments/assets/c598bae0-36bc-46ee-9cc2-cc1b5d567bc2" />
+<img width="900" height="2030" alt="image" src="https://github.com/user-attachments/assets/a45c7177-2256-48de-b025-b4bdec723b8a" />
+<img width="900" height="2030" alt="image" src="https://github.com/user-attachments/assets/3cf43a38-2246-4a87-8d2f-31e210607db8" />
+<img width="900" height="2030" alt="image" src="https://github.com/user-attachments/assets/75c34fc4-85c9-4287-8088-62fe28a46ce9" />
+<img width="900" height="2030" alt="image" src="https://github.com/user-attachments/assets/e6ad7018-3a3c-42cb-baf6-dd0e7416698b" />
+
 ## 🧪 Testing
 
 ### Manual Testing
